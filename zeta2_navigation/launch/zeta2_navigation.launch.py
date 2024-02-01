@@ -35,8 +35,8 @@ def generate_launch_description():
         default=os.path.join(
             zeta2_nav2_dir,
             'maps',
-            'seongsu',
-            'seongsu.yaml'))
+            'cartographer',
+            'carto_seongsu.yaml'))
 
     param_file_name = 'zeta_dwb' + '.yaml'
     param_dir = LaunchConfiguration(
