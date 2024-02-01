@@ -30,7 +30,7 @@ cd ~/zeta_ws
 colcon build --packages-select zeta2_navigation zeta2_slam_toolbox zeta2_cartographer
 
 source /opt/ros/humble/setup.bash
-
+source ~/zeta_ws/install/setup.bash
 
 ros2 launch zeta2_bringup zeta2_bringup.launch.py # if, mc, control, odom, making tf, scan
 
@@ -44,8 +44,7 @@ ros2 launch zeta2_slam_toolbox zeta2_slam_toolbox.launch.py
 ros2 run nav2_map_server map_saver_cli -f slam_toolbox_seongsu
 
 
-ros2 launch zeta2_navigation navigation.launch.py
-ros2 launch zeta2_navigation navigation_test.launch.py
+ros2 launch zeta2_navigation zeta2_navigation.launch.py
 
 
 
