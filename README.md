@@ -1,5 +1,5 @@
 
-# Zeta Edu Autonomous
+# Zeta2 Edu Autonomous
 
 ## zeta2 bringup을 먼저 완료하세요.
 
