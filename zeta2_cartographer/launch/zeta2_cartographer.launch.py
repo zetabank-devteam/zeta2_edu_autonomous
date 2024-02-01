@@ -18,8 +18,8 @@ def generate_launch_description():
             name='cartographer_node',
             output='screen',
             parameters=[{
-                'configuration_directory': zeta2_cartographer_config,
-                'configuration_basename': zeta2_cartographer_config_file,
+                '-configuration_directory': zeta2_cartographer_config,
+                '-configuration_basename': zeta2_cartographer_config_file,
             }],
             remappings=[
                 ('scan', 'scan'),

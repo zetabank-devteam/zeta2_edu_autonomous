@@ -23,18 +23,21 @@ sudo apt install ros-humble-nav2-bringup -y
 source /opt/ros/humble/setup.bash
 source ~/zeta_ws/install/setup.bash
 
-cd ~/zeta_ws
-```
+cd ~/zeta_ws/src
+git clone https://github.com/zetabank-devteam/zeta2_edu_autonomous.git
 
-```bash
+cd ~/zeta_ws
 colcon build --packages-select zeta2_navigation zeta2_slam_toolbox zeta2_cartographer
 
 source /opt/ros/humble/setup.bash
-source ~/zeta_ws/install/setup.bash
+
 
 ros2 launch zeta2_bringup zeta2_bringup.launch.py # if, mc, control, odom, making tf, scan
 
 ros2 launch zeta2_bringup zeta_joy.launch.py
+
+ros2 launch zeta2_cartographer cartographer.launch.py
+
 
 ros2 launch zeta2_slam_toolbox zeta2_slam.launch.py
 
