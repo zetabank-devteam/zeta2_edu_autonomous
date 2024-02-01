@@ -36,7 +36,7 @@ ros2 launch zeta2_bringup zeta2_bringup.launch.py # if, mc, control, odom, makin
 
 ros2 launch zeta2_bringup zeta_joy.launch.py
 
-ros2 launch zeta2_cartographer cartographer.launch.py
+ros2 launch zeta2_cartographer zeta2_cartographer.launch.py
 
 
 ros2 launch zeta2_slam_toolbox zeta2_slam.launch.py

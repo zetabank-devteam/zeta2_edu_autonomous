@@ -12,8 +12,6 @@
 -- See the License for the specific language governing permissions and
 -- limitations under the License.
 
--- /* Author: Darby Lim */
-
 include "map_builder.lua"
 include "trajectory_builder.lua"
 
