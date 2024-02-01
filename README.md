@@ -37,12 +37,11 @@ ros2 launch zeta2_bringup zeta2_bringup.launch.py # if, mc, control, odom, makin
 ros2 launch zeta2_bringup zeta_joy.launch.py
 
 ros2 launch zeta2_cartographer zeta2_cartographer.launch.py
+ros2 run nav2_map_server map_saver_cli -f carto_seongsu
 
 
-ros2 launch zeta2_slam_toolbox zeta2_slam.launch.py
-
-
-ros2 service call /slam_toolbox/save_map slam_toolbox/srv/SaveMap "{name: {data: 'seongsu'}}"
+ros2 launch zeta2_slam_toolbox zeta2_slam_toolbox.launch.py
+ros2 run nav2_map_server map_saver_cli -f slam_toolbox_seongsu
 
 
 ros2 launch zeta2_navigation navigation.launch.py
