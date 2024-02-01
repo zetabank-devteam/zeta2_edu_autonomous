@@ -19,10 +19,10 @@ def generate_launch_description():
             executable='cartographer_node',
             name='cartographer_node',
             output='screen',
-            arguments=[{
+            arguments=[
                 '-configuration_directory', zeta2_cartographer_config,
                 '-configuration_basename', zeta2_cartographer_config_file,
-            }],
+            ],
             remappings=[
                 ('scan', 'scan'),
                 ('odom', 'odom')
