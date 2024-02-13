@@ -5,6 +5,8 @@
 
 - [zeta2_bringup](https://github.com/zetabank-devteam/zeta2_edu_devel.git)
 
+## PC에서 이 과정을 진행합니다. PC에도 ubuntu를 설치하고 작업공간을 만듭니다.
+
 -------------
 
 ## 필수 패키지 설치
@@ -18,9 +20,11 @@ sudo apt install ros-humble-cartographer -y
 sudo apt install ros-humble-cartographer-ros -y
 
 # navigation
+sudo apt install ros-humble-xacro -y
 sudo apt install ros-humble-navigation2 -y
 sudo apt install ros-humble-nav2-bringup -y
 ```
+
 ## zeta_edu_autonomous 패키지 설치
 ```bash
 source /opt/ros/humble/setup.bash
@@ -33,6 +37,14 @@ colcon build --packages-select zeta2_navigation zeta2_slam_toolbox zeta2_cartogr
 
 source ~/zeta_ws/install/setup.bash
 ```
+
+## 실행전 할 것
+
+scripts 폴더에 있는 time.sh를 실행하고 할 것.
+
+이유는 로봇은 인터넷에 연결되어 있지 않아 시간이 느려지는 현상이 있음.
+
+그래서 PC의 시간으로 로봇을 세팅하는 것임
 
 ## slam tool box 매핑
 
