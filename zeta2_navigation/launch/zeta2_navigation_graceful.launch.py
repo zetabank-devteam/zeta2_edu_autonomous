@@ -38,7 +38,7 @@ def generate_launch_description():
             'cartographer',
             'carto_seongsu.yaml'))
 
-    param_file_name = 'zeta_nomal' + '.yaml'
+    param_file_name = 'zeta_graceful' + '.yaml'
     param_dir = LaunchConfiguration(
         'params_file',
         default=os.path.join(
