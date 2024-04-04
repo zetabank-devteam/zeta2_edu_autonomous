@@ -30,7 +30,7 @@ sudo apt install ros-iron-nav2-bringup -y
 source /opt/ros/iron/setup.bash
 
 cd ~/zeta_ws/src
-git clone https://github.com/zetabank-devteam/zeta2_edu_autonomous.git
+git clone -b iron https://github.com/zetabank-devteam/zeta2_edu_autonomous.git
 
 cd ~/zeta_ws
 colcon build --packages-select zeta2_navigation zeta2_slam_toolbox zeta2_cartographer
