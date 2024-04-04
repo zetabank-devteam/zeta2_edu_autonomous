@@ -13,21 +13,21 @@
 
 ```bash
 # slam_toolbox
-sudo apt install ros-humble-slam-toolbox -y
+sudo apt install ros-iron-slam-toolbox -y
 
 # cartographer
-sudo apt install ros-humble-cartographer -y
-sudo apt install ros-humble-cartographer-ros -y
+sudo apt install ros-iron-cartographer -y
+sudo apt install ros-iron-cartographer-ros -y
 
 # navigation
-sudo apt install ros-humble-xacro -y
-sudo apt install ros-humble-navigation2 -y
-sudo apt install ros-humble-nav2-bringup -y
+sudo apt install ros-iron-xacro -y
+sudo apt install ros-iron-navigation2 -y
+sudo apt install ros-iron-nav2-bringup -y
 ```
 
 ## zeta_edu_autonomous 패키지 설치
 ```bash
-source /opt/ros/humble/setup.bash
+source /opt/ros/iron/setup.bash
 
 cd ~/zeta_ws/src
 git clone https://github.com/zetabank-devteam/zeta2_edu_autonomous.git
